@@ -1,0 +1,25 @@
+.input-box{
+    margin-bottom:20px;
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+
+.input{
+    width: 300px;
+    padding: 10px 0 5px 5px;
+    outline: none;
+}
+
+.input-btn{
+    background-color: transparent;
+    color: rgb(116, 114, 114);;
+    border: 2px solid rgb(116, 114, 114);
+    outline: none;
+}
+
+.input-btn:hover{
+    background-color: rgb(116, 114, 114);
+    color: white;
+}
