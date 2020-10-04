@@ -19,7 +19,7 @@ body {
    text-align: center;
    font-size: 25px;
    margin: 20px 0;
-   color: #999;
+   color: white;
    font-family: fantasy;
 }
 
@@ -131,4 +131,27 @@ body {
   color: #333;
   font-size: 11px;
   font-weight: bold;
+}
+
+@media only screen and (max-width:600px){
+
+  .todo-box{
+    width: 350px;
+  }
+
+  .heading{
+    font-size: 20px;
+  }
+
+  .input-box .input{
+    width: 230px;
+  }
+
+  .input-box .input-btn{
+    width: 80px;
+  }
+
+  .main-body .main-text{
+    width: 300px;
+  }
 }
