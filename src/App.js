@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import Todo from './Todo';
 import AddTodo from './AddTodo';
-import backgroundvideo from './video/backgroundvideo.mp4';
-import './App.css'
 
 class App extends Component {
    state = {
       todos:[
-         {id: 1, content: 'Early morning daily prayer must be made everyday'},
-         {id: 2, content: 'Plaintain, rice and stew for breakfast'}
+         {id: 1, content: 'Early morning daily prayer daily'},
       ]
    }
 
@@ -31,19 +28,16 @@ class App extends Component {
 
   render(){
   return (
-    <div>
-      <div className='bg-video'>
-       <video className='bg-video-content' autoPlay loop muted>
-         <source src={backgroundvideo} type='video/mp4' />
-         <source src={backgroundvideo} type='video/ogg' />
-         Your browser does not support the video tag.
-        </video>
-      </div>
-      <h1 className='text-heading'>ADD YOUR SCHEDULE FOR THE DAY</h1>
-      <AddTodo addTodo={this.addTodo}/>
-      <Todo todos={this.state.todos} deleteTodo={this.deleteTodo}/>
-      <h1 className='legal-owner'>&copy;by morenikeji</h1>
-      </div>
+    <div className='container'>
+        <div className="todo-box">
+          <h1 className='heading'>ADD YOUR SCHEDULE FOR THE DAY</h1>
+            <AddTodo addTodo={this.addTodo}/>
+            <Todo todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+         </div>
+         <div className='copywrite'>
+         <p className='legal'>&copy;by morenikeji</p>
+        </div>
+    </div>
   );
  }
 }

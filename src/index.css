@@ -1,13 +1,134 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: crimson;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-box{
+  background-color: rgb(163, 6, 37);
+  min-height: 550px;
+  width: 500px;
+  margin: 20px auto;
+}
+.heading{
+   text-align: center;
+   font-size: 25px;
+   margin: 20px 0;
+   color: #999;
+   font-family: fantasy;
+}
+
+.input-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box .input{
+  background-color: rgba(70, 10, 3, 0.918);
+  width: 300px;
+  height: 50px;
+  margin-right: 20px;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.input-box .input::placeholder{
+  color: rgb(153, 149, 149);
+}
+
+.input-box .input-btn{
+  width: 90px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(105, 202, 7);
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.input-box .input-btn:hover{
+  background-color: rgb(78, 148, 8);
+}
+
+.main-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.main-body .main-text{
+  color: white;
+  width: 380px;
+  background-color: #bf07ac;
+  height: 50px;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+}
+
+.list-btn{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background-color: transparent;
+  transition: .3s ease transform;
+}
+
+.list-btn:hover{
+  color: red;
+  transform: scale(2);
+}
+
+.text-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  color: white;
+  animation: bounce 1s alternate infinite;
+}
+
+@keyframes bounce{
+  0%{
+    transform: scale(.1) translateX(70px);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.copywrite{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.copywrite .legal{
+  color: #333;
+  font-size: 11px;
+  font-weight: bold;
 }
