@@ -20,7 +20,7 @@ class AddTodo extends Component{
     render(){
         return(
             <div>
-              <form onSubmit={this.handleSubmit}>
+              <form onSubmit={this.handleSubmit} id="todo-form">
                   <div className='input-box'>
                   <input type='text' id='content' className='input' required placeholder='Enter schedule' onChange={this.handleChange}/>
                   <button className='input-btn'>Add</button>
